@@ -4,6 +4,7 @@ import numpy as np
 import pandas as pd
 from src.pipeline.pred_pipeline import CustomData,PredictPipeline
 
+
 application = Flask(__name__)
 app = application
 
@@ -34,7 +35,6 @@ def predict_data():
         predict_pipeline = PredictPipeline()
         results = predict_pipeline.predict(prediction)
         return render_template('home.html',results = results[0])
-    
-    
-if __name__ == "__main__":
-    app.run(host="0.0.0.0",debug = True )    
+
+if __name__ == '__main__':
+    app.run()

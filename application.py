@@ -33,8 +33,9 @@ def predict_data():
         print(prediction)
         predict_pipeline = PredictPipeline()
         results = predict_pipeline.predict(prediction)
+        print(results[0])
         return render_template('home.html',results = results[0])
     
     
 if __name__ == "__main__":
-    app.run(host="0.0.0.0")    
+    app.run(host="0.0.0.0",debug = True,port = 8000 )    
