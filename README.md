@@ -1,4 +1,4 @@
-# Diamond Price Predictor
+# Gem Stone Price Predictor
 
 The purpose of this project is to create a model that can accurately predict the price of diamonds based on their characteristics.
 
